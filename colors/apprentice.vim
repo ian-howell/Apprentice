@@ -2,7 +2,7 @@
 " Author:      Romain Lafourcade (romainlafourcade@gmail.com)
 " Webpage:     https://github.com/romainl/Apprentice
 " Description: Essentially a streamlining and conversion to xterm colors of 'sorcerer' by Jeet Sukumaran (jeetsukumaran@gmailcom)
-" Last Change: 2019-07-28
+" Last Change: 2019-09-18
 
 hi clear
 
@@ -68,10 +68,10 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Function ctermbg=NONE ctermfg=229 cterm=NONE guibg=NONE guifg=#ffffaf gui=NONE
     hi SpecialKey ctermbg=NONE ctermfg=240 cterm=NONE guibg=NONE guifg=#585858 gui=NONE
     hi Title ctermbg=NONE ctermfg=231 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
-    hi DiffAdd ctermbg=235 ctermfg=108 cterm=reverse guibg=#262626 guifg=#87af87 gui=reverse
-    hi DiffChange ctermbg=235 ctermfg=103 cterm=reverse guibg=#262626 guifg=#8787af gui=reverse
-    hi DiffDelete ctermbg=235 ctermfg=131 cterm=reverse guibg=#262626 guifg=#af5f5f gui=reverse
-    hi DiffText ctermbg=235 ctermfg=208 cterm=reverse guibg=#262626 guifg=#ff8700 gui=reverse
+    hi DiffAdd ctermbg=238 ctermfg=NONE cterm=NONE guibg=#444444 guifg=NONE gui=NONE
+    hi DiffChange ctermbg=250 ctermfg=238 cterm=reverse guibg=#bcbcbc guifg=#444444 gui=reverse
+    hi DiffDelete ctermbg=52 ctermfg=NONE cterm=NONE guibg=#5f0000 guifg=NONE gui=NONE
+    hi DiffText ctermbg=235 ctermfg=110 cterm=reverse guibg=#262626 guifg=#8fafd7 gui=reverse
     hi IncSearch ctermbg=131 ctermfg=235 cterm=NONE guibg=#af5f5f guifg=#262626 gui=NONE
     hi Search ctermbg=229 ctermfg=235 cterm=NONE guibg=#ffffaf guifg=#262626 gui=NONE
     hi Directory ctermbg=NONE ctermfg=73 cterm=NONE guibg=NONE guifg=#5fafaf gui=NONE
@@ -141,10 +141,10 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Function ctermbg=NONE ctermfg=yellow cterm=NONE
     hi SpecialKey ctermbg=NONE ctermfg=darkgrey cterm=NONE
     hi Title ctermbg=NONE ctermfg=white cterm=NONE
-    hi DiffAdd ctermbg=black ctermfg=green cterm=reverse
-    hi DiffChange ctermbg=black ctermfg=magenta cterm=reverse
-    hi DiffDelete ctermbg=black ctermfg=darkred cterm=reverse
-    hi DiffText ctermbg=black ctermfg=red cterm=reverse
+    hi DiffAdd ctermbg=darkgrey ctermfg=NONE cterm=NONE
+    hi DiffChange ctermbg=lightgrey ctermfg=darkgrey cterm=reverse
+    hi DiffDelete ctermbg=darkred ctermfg=NONE cterm=NONE
+    hi DiffText ctermbg=black ctermfg=blue cterm=reverse
     hi IncSearch ctermbg=darkred ctermfg=black cterm=NONE
     hi Search ctermbg=yellow ctermfg=black cterm=NONE
     hi Directory ctermbg=NONE ctermfg=cyan cterm=NONE
